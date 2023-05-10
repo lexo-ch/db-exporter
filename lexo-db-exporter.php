@@ -5,7 +5,7 @@
  * Plugin URI: https://www.lexo.ch
  * Description: Export database.
  * Author: LEXO
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author URI: https://www.lexo.ch
  */
 
@@ -279,7 +279,7 @@ final class LexoDbExporter
                             type="text"
                             class="ldbe-input"
                             id="ldbe-old-string"
-                            value="//<?php echo parse_url(get_site_url(), PHP_URL_HOST); ?>"
+                            value="//<?php echo preg_replace("(^https?://)", "", get_site_url()); ?>"
                         >
                     </label>
 
