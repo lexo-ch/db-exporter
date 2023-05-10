@@ -2,10 +2,10 @@
 
 /**
  * Plugin Name: DB Exporter
- * Plugin URI: https://www.lexo.ch
+ * Plugin URI: https://github.com/lexo-ch/db-exporter
  * Description: Export database.
  * Author: LEXO
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author URI: https://www.lexo.ch
  */
 
