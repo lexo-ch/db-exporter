@@ -1,0 +1,54 @@
+#lexo-db-export-wrapper {
+    background-color: white;
+    max-width: 600px;
+    padding: 2em;
+    border: 1px solid #d8d8d8;
+    margin: 2em auto;
+}
+
+.ldbe-label {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.ldbe-input {
+    width: 500px;
+}
+
+.ldbe-label span {
+    flex: 1;
+}
+
+#ldbe-submit-spinner {
+    color: #2271b1;
+    margin-left: 5px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dashicons.spin {
+    animation: dashicons-spin 1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes dashicons-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#lexo-db-export-wrapper:is(.exporting) {
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#lexo-db-export-wrapper:is(.exporting) #ldbe-submit-spinner {
+    opacity: 1;
+    visibility: visible;
+}
