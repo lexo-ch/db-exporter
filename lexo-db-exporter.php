@@ -5,7 +5,7 @@
  * Plugin URI: https://github.com/lexo-ch/db-exporter
  * Description: Export database.
  * Author: LEXO
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author URI: https://www.lexo.ch
  */
 
@@ -217,8 +217,7 @@ final class LexoDbExporter
             <div class="notice notice-error">
                 <p><?php echo sprintf(
                     __('<code>%s</code> requires <code>mysqli</code> in order to work.', 'ldbe'),
-                    $this->name,
-                    self::MIN_PHP_VERSION
+                    $this->name
                 ); ?></p>
             </div>
         <?php echo ob_get_clean();
